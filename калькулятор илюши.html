@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+  background-color: antiquewhite;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  margin-right: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: rgb(33, 101, 226);
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #ff9421;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  background-color: rgb(255, 92, 119);
+  padding: 4px;
+  border-radius: 50px;
+  max-width: 360px;
+  font-family: "Tahoma";
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  background-color: pink;
+  color: rgb(255, 92, 119);
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px;
+  margin: 2px;
+}
+
+.item:hover {
+  transition: 0.5s;
+  background-color: rgb(255, 92, 119);
+  color: pink;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  max-width: 100%;
+}
+
+input {
+  width: 99%;
+  height: 60px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+  text-align: right;
+  border-radius: 50px;
+  background-color: rgb(197, 158, 158);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  grid-column: 1/-1;
+  margin: 10px;
+  padding: 0;
+}
+
+.clean {
+  grid-column: 1/3;
+  background-color: whitesmoke;
+}
+
+.back {
+  grid-column: 3/-1;
+}
+
+.equal {
+  grid-column: 4;
+  grid-row: 6/8;
+  background-color: whitesmoke;
+}
+
+.zero {
+  grid-column: 1/3;
+}
+
+</style>
+</head>
+
+<body>
+    <button onclick="buttonSwap">Swap</button>
+    <div class="container">
+        <div class="item input">
+            <form name="form">
+                <input type="text" name="textview" readonly>
+            </form>
+        </div>
+        <div class="item clean" onclick="clean()" >
+            C
+        </div>
+        <div class="item back" onclick="back()">
+            &larr;
+        </div>
+        <div class="item" onclick="insert('+')">
+            +
+        </div>
+        <div class="item" onclick="insert('-')">
+            -
+        </div>
+        <div class="item" onclick="insert('*')">
+            &times;
+        </div>
+        <div class="item" onclick="insert('/')">
+            &divide;
+        </div>
+        <div class="item" onclick="insert('7')">
+            7
+        </div>
+        <div class="item" onclick="insert('8')">
+            8
+        </div>
+        <div class="item" onclick="insert('9')">
+            9
+        </div>
+        <div class="item" onclick="insert('(')">
+            (
+        </div>
+        <div class="item" onclick="insert('4')">
+            4
+        </div>
+        <div class="item" onclick="insert('5')">
+            5
+        </div>
+        <div class="item" onclick="insert('6')">
+            6
+        </div>
+        <div class="item" onclick="insert(')')">
+            )
+        </div>
+        <div class="item" onclick="insert('1')">
+            1
+        </div>
+        <div class="item" onclick="insert('2')">
+            2
+        </div>
+        <div class="item" onclick="insert('3')">
+            3
+        </div>
+        <div class="item equal" onclick="equal('')">
+            =
+        </div>
+        <div class="item zero" onclick="insert('0')">
+            0
+        </div>
+        <div class="item" onclick="insert('.')">
+            .
+        </div>
+    </div>
+    <script>
+        
+            function insert(num) {
+                document.form.textview.value =
+                    document.form.textview.value + num;
+            }
+
+            function clean() {
+                document.form.textview.value = "";
+            }
+
+            function equal() {
+                document.form.textview.value = "";
+            }
+
+            function back() {
+                let exp = document.form.textview.value;
+                document.form.textview.value = exp.substring(0, exp.length - 1)
+
+                console.log(exp);
+            }
+
+            function equal() {
+                let exp = document.form.textview.value;
+                if (exp) {
+                    document.form.textview.value = eval(exp);
+                }
+            }
+        
+
+    </script>
+</body>
+</html>

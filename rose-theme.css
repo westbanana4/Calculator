@@ -1,0 +1,207 @@
+body {
+  background-color: rgba(255, 176, 189, 0.658);
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.blue-theme {
+  background-color: cornflowerblue;
+  transition: 0.5s;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.rose-theme {
+  background-color: rgb(255, 92, 119);
+  color: pink;
+}
+
+.rose-button {
+  margin-right: 50px;
+  border-radius: 50px;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: rgb(255, 92, 119);
+  color: pink;
+  cursor: pointer;
+  transition: 0.1s;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+  font-family: "IBM Plex Serif", serif;
+}
+
+.rose-button:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 50px rgb(253, 44, 79);
+}
+
+.rose-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  background-color: rgb(255, 92, 119);
+  padding: 4px;
+  border-radius: 50px;
+  max-width: 360px;
+  font-family: "IBM Plex Serif", serif;
+  padding: 20px;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.678);
+}
+
+.rose-item {
+  font-family: "IBM Plex Serif", serif;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  background-color: pink;
+  color: rgb(255, 92, 119);
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px;
+  margin: 2px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.178);
+}
+
+.rose-item:hover {
+  transition: 0.5s;
+  background-color: rgb(255, 92, 119);
+  color: pink;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+/* rgb(255, 92, 119) */
+
+form {
+  max-width: 100%;
+}
+
+.rose-input {
+  width: 99%;
+  height: 60px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+  text-align: right;
+  border-radius: 50px;
+  background-color: rgb(197, 158, 158);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 95, 122);
+  font-family: "IBM Plex Serif", serif;
+}
+
+.input {
+  grid-column: 1/-1;
+  margin: 10px;
+  padding: 0;
+}
+
+.clean {
+  grid-column: 1/3;
+  background-color: whitesmoke;
+}
+
+.back {
+  grid-column: 3/-1;
+}
+
+.equal {
+  grid-column: 4;
+  grid-row: 6/8;
+  background-color: whitesmoke;
+}
+
+.zero {
+  grid-column: 1/3;
+}
+
+/* .blue-button {
+  margin-right: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: rgb(33, 101, 226);
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #ff9421;
+  cursor: pointer;
+  transition: 1s;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+}
+.blue-button:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 50px rgb(255, 153, 0);
+}
+
+.blue-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  background-color: rgb(33, 101, 226);
+  padding: 4px;
+  border-radius: 50px;
+  max-width: 360px;
+  font-family: "Tahoma";
+  padding: 20px;
+} */
+/* 
+.blue-item {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  background-color: #ff9421;
+  color: rgb(33, 101, 226);
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px;
+  margin: 2px;
+}
+
+.blue-item:hover {
+  transition: 0.5s;
+  background-color: #ff9421;
+  color: rgb(33, 101, 226);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blue-input {
+  width: 99%;
+  height: 60px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+  text-align: right;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: #ff9421;
+  color: rgb(33, 101, 226);
+}
+
+
+
+
+
+
+.blue-theme {
+  background-color: rgb(33, 101, 226);
+  color: #ff9421;
+} */

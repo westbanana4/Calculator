@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rose-theme.css" id="rose">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
+    <link rel="rose icon" href="rose.ico"  id="ico">
+    <title>Калькулятор</title>
+</head>
+
+<body >
+    <!-- <input>Swap<input> -->
+    <div class="main-container  ">
+                <!-- <button class="rose-button blue-button">Open</button> -->
+
+    <button id="switch" class="rose-button blue-button">Switch</button>
+        <!-- <button onclick="swapTheme()" class="rose-button">Switch</button> -->
+    <div class="rose-container blue-container">
+        <div class="item input">
+            <form name="form">
+                <input type="text" name="textview" readonly class="rose-input blue-input">
+            </form>
+        </div>
+        <div class="rose-item clean  blue-item" onclick="clean()" >
+            C
+        </div>
+        <div class="rose-item back blue-item" onclick="back()">
+            &larr;
+        </div>
+        <div class="rose-item blue-item" onclick="insert('+')">
+            +
+        </div>
+        <div class="rose-item blue-item" onclick="insert('-')">
+            -
+        </div>
+        <div class="rose-item blue-item" onclick="insert('*')">
+            &times;
+        </div>
+        <div class="rose-item blue-item" onclick="insert('/')">
+            &divide;
+        </div>
+        <div class="rose-item blue-item" onclick="insert('7')">
+            7
+        </div>
+        <div class="rose-item blue-item" onclick="insert('8')">
+            8
+        </div>
+        <div class="rose-item blue-item" onclick="insert('9')">
+            9
+        </div>
+        <div class="rose-item blue-item" onclick="insert('(')">
+            (
+        </div>
+        <div class="rose-item blue-item" onclick="insert('4')">
+            4
+        </div>
+        <div class="rose-item blue-item" onclick="insert('5')">
+            5
+        </div>
+        <div class="rose-item blue-item" onclick="insert('6')">
+            6
+        </div>
+        <div class="rose-item blue-item" onclick="insert(')')">
+            )
+        </div>
+        <div class="rose-item blue-item" onclick="insert('1')">
+            1
+        </div>
+        <div class="rose-item blue-item" onclick="insert('2')">
+            2
+        </div>
+        <div class="rose-item blue-item" onclick="insert('3')">
+            3
+        </div>
+        <div class="rose-item equal blue-item equal-blue" onclick="equal('')">
+            =
+        </div>
+        <div class="rose-item zero blue-item" onclick="insert('0')">
+            0
+        </div>
+        <div class="rose-item blue-item" onclick="insert('.')">
+            .
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
